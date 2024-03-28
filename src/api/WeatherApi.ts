@@ -53,7 +53,7 @@ export namespace WeatherAPI {
 
   export const getIconUrlById = (code: number, isDay = true) => {
     const condition = getWeatherConditionByCode(code);
-    return `http://cdn.weatherapi.com/weather/128x128/${
+    return `https://cdn.weatherapi.com/weather/128x128/${
       isDay ? "day" : "night"
     }/${condition.icon}.png`;
   };
